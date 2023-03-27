@@ -1,3 +1,4 @@
+
 import java.util.*;
 public class GanjilGenap {
     public static void main(String[] args) {
@@ -77,13 +78,19 @@ public class GanjilGenap {
         System.out.print("Pilihan : ");
         menu = scan.nextInt();
 
-        if (menu ==1){
-            cekGanjilGenap();
-        }else if(menu ==2){
-            printGanjilGenap(0, null);
-        }else{
-            System.exit(menu);
-        }
+
+        
+            switch(menu){
+                case 1:
+                    cekGanjilGenap();
+                break;
+                case 2: 
+                    printGanjilGenap(0, null);
+                break;
+                case 3:
+                    System.exit(menu);
+            }
+
     
 
     }  
